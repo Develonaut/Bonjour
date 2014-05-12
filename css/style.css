@@ -1,0 +1,920 @@
+/*==========================================
+GENERAL
+===========================================*/
+
+
+html, 
+body {
+    height: 100%;
+    background-color: #F9F9F9;
+}
+
+body {
+    margin: 0; 
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+
+.wrapper {
+  max-width: 100%;
+  min-height: 700px;
+  margin: 0 auto;
+  padding: 0;
+  background: #F9F9F9;
+}
+
+.bonjour { 
+  max-width: 100%;
+  min-height: 585px;
+  margin: 0 auto;
+  padding: 0;
+  background: #F9F9F9;
+
+}
+
+.faq {
+   padding: 115px 0 0 0;
+}
+
+.with-bg {
+  background: url('../img/photography_%402X.png') repeat;
+}
+
+.fill {
+  height: 100%;
+  background: url('../img/Seattlebgreg.jpg') no-repeat center steelblue;
+  background-size: cover;
+
+}
+
+img {
+  max-width: 100%;
+  background-size: cover;
+}
+.bonjour-background {
+   background: url('../img/featurebg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.icon {
+  margin-left: auto;
+  margin-right: auto;   
+}
+
+
+/*Container to auto center*/
+.city-flex-container {
+  height: 505px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.manhattan-badge,
+.san-francisco-badge,
+.seattle-badge {
+  margin: auto;
+}
+
+.first-fact {
+}
+
+
+.facts {
+  height: 1450px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  height: 275px;
+  margin-top: 90px;
+  padding: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.flex-container-reverse { /* modularlize this*/
+  height: 275px;
+  margin-top: 90px;
+  margin-bottom: 0px;
+  padding: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  
+}
+
+.text {
+  width: 472px;
+  height: 235px;
+  margin-left: 51px;
+  padding-top: 30px;  
+}
+
+.text-right {
+  width: 472px;
+  height: 235px;
+  margin-right: 51px;
+  padding-top: 30px;  
+}
+
+.text h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.text p {
+  font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 29px;
+    font-size: 1.125em;
+}
+
+.text-right h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.text-right p {
+  font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 29px;
+    font-size: 1.125em;
+}
+
+
+.body,
+.body-intro {
+    margin: 29px auto 0 auto;
+    height: 87px;
+    width: 69%;
+    padding: 0;
+    text-align: center;
+    font-size: 1.125em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    line-height: 29px;
+    letter-spacing:;
+}
+
+.body-intro {
+    width: 800px;
+    height: 145px;
+    margin-top: 35px;
+}
+
+/*==========================================
+FEATURE CONTENT
+===========================================*/
+
+.feature {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+  
+    
+}
+
+.bonjour-background {
+   background: url('../img/featurebg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.city-box {
+    height: 440px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 35%;
+    left: 48.5%;
+    margin-top: -80px;
+    margin-left: -100px;
+}
+
+.row {
+    width: 274px;
+    margin: 7px auto;
+    text-decoration: none;
+}
+
+.row a {
+    width: 274px;
+    margin: 7px auto;
+    text-decoration: none;
+}
+
+
+.city-button,
+.city-button-top-row {
+    margin-top: 24px; 
+    padding-top: 24px;
+    height: 43px;
+    color: #fff;
+    font-size: 1.063em;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    opacity: 0.75;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.100em;
+}
+
+.city-button-top-row {
+    margin-top: 0px;
+}
+
+
+
+.city-button:hover,
+.city-button-top-row:hover {
+    margin-top: 24px; 
+    padding-top: 24px;
+    height: 43px;
+    color: #fff;
+    font-size: 1.063em;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    opacity: 1.00;
+}
+
+.city-box .row h1 {
+    font-family:  'Lato', sans-serif;
+    font-weight: 900;
+    font-style: italic; 
+    color: white;
+    font-size: 6.250em;
+    margin: 10px 0 0 -46.7px;
+    width: 373px;
+    
+}
+
+.city-box .row p {
+    font-family: 'Lato' , sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    line-height: 30px;
+    font-size: 1.563em;
+    margin: 0 auto; 
+    width: 373px;
+} 
+
+.montserrat-body-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.745em;
+    margin: 22px 0 25px -25px;
+    color: #fff;
+    letter-spacing: 0.125em;
+}
+
+
+
+
+/*==========================================
+NAVIGATION
+===========================================*/
+
+nav {
+
+  background: #FFFFFF;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 72px;
+  z-index: 2;
+}
+
+nav .social-media {
+    position: relative;
+    float: right;
+    right: 13px;
+    top: 30px;
+    width: 177px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav .social-media li {
+    position: relative;
+    display: inline-block;
+    padding-right: 27px;
+}
+
+nav .social-media li a img {
+    text-decoration: none;
+    /*The color below has a 50 percent opacity to it*/
+    opacity: 0.30;
+    width: 29px;
+    height: 22px;  
+}
+
+nav .social-media img:hover {
+    opacity: 0.50;
+}
+
+nav .social-media li a {
+    bottom: 5px;
+    position: relative;
+    text-decoration: none;
+    /*The color below has a 50 percent opacity to it*/
+    color: rgba(255,255,255, 0.5);   
+}
+
+nav .social-media li a:hover {
+  text-decoration: none;
+  /*The color below has a 50 percent opacity to it*/
+  color: rgba(255,255,255, 1); 
+}
+
+
+nav .links {
+    position: relative;
+    float: left;
+    left: 40px;
+    top: 29px;
+    width: 300px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav .links li {
+    position: relative;
+    display: inline-block;
+    padding-right: 27px;
+}
+
+nav .links li a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.750em;
+    color: #A4A4A4;
+    letter-spacing: 0.063em;
+}
+nav .links li a:hover {
+  text-decoration: none;
+  /*The color below has a 50 percent opacity to it*/
+  opacity: 1;
+  color: #767676;
+  border-bottom: 2px solid #767676;
+  padding-bottom: 4px; 
+}
+
+
+
+
+/*==========================================
+FAQ CONTENT
+===========================================*/
+
+em {
+  font-family:  'Lato', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  
+}
+
+.heading-facts {
+    margin: 115px auto 0 auto;
+    height: 42px;
+    padding: 0;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Lato', sans-serif;
+}
+
+.heading {
+    margin: 0 auto;
+    height: 42px;
+    padding: 0;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Lato', sans-serif;
+}
+
+.p-second {
+  margin-top: 86px;
+}
+
+
+/*==========================================
+SEATTLE IMAGE DIV
+===========================================*/
+
+/*Background Container*/
+.seattle {
+  height: 568px;
+  width: 100%;
+  background-color: blue;
+  overflow: hidden;
+  background: url('../img/Seattle-Background.jpg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 3;
+}
+
+
+/*Object Being Centered*/
+.seattle-badge {
+  width: 65%;
+  height: 100%;
+  max-width: 700px;
+}
+
+.seattle-bg {
+    background: url('../img/Seattle-Badge.svg') no-repeat center;
+    background-size: 100%;
+  }
+
+/*Decoration Border*/
+.border-1 {
+  margin: 22px auto;
+  width: 95%;
+  height: 515px;
+  max-height: 515px;
+  border: 5px solid white;
+}
+
+/*Decoration Border 2 (The margin is based off of Border 1 due to Border 2 being inside 1)*/
+.border-2 {
+  margin: 5px auto;
+  width: 99%;
+  height: 502px;
+  max-height: 515px;
+  border: 2px solid white;
+}
+
+
+
+
+
+/*==========================================
+SEATTLE FACTS SECTIONS
+===========================================*/
+
+.icon-container-seattle {
+  width: 259px;
+  height: 260px;
+  border: 7px solid #658795;
+  text-align: center;
+}
+
+
+.college-degrees {
+  margin-top: 61px;
+  height: 137px;
+  width: 98px;
+  background: url('../img/Graded-Paper-Icon%402x.svg') no-repeat;
+}
+
+.orignal-starbucks {
+  margin-top: 73px;
+  height: 118px;
+  width: 83px;
+  background: url('../img/Coffe-Cup-Icon.svg') no-repeat;
+}
+
+.technology-dependent {
+  margin-top: 75px;
+  height: 110px;
+  width: 192px;
+  background: url('../img/Laptop%20Icon%402x.svg') no-repeat;
+}
+
+
+
+/*==========================================
+SAN FRANSISCO IMAGE DIV
+===========================================*/
+
+/*Background Container*/
+.san-francisco {
+  height: 568px;
+  width: 100%;
+  background-color: blue;
+  overflow: hidden;
+  background: url('../img/san-francisco-bg.jpg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 3;
+}
+
+
+/*Object Being Centered*/
+.san-francisco-badge {
+  width: 90%;
+  height: 100%;
+  max-width: 1000px; 
+}
+
+.san-francisco-bg {
+    background: url('../img/san-fransico-badge.svg') no-repeat center;
+    background-size: 100%;
+}
+
+
+/*Decoration Border*/
+.border-1 {
+  margin: 22px auto;
+  width: 95%;
+  height: 515px;
+  max-height: 515px;
+  border: 5px solid white;
+}
+
+/*Decoration Border 2 (The margin is based off of Border 1 due to Border 2 being inside 1)*/
+.border-2 {
+  margin: 5px auto;
+  width: 99%;
+  height: 502px;
+  max-height: 515px;
+  border: 2px solid white;
+}
+
+
+
+/*==========================================
+SAN FRAN FACTS SECTIONS
+===========================================*/
+
+
+
+.icon-container-san-fran {
+  width: 259px;
+  height: 260px;
+  border: 7px solid #5AA39A;
+  text-align: center;
+}
+
+.bank-bag {
+  margin-top: 70px;
+  height: 120px;
+  width: 88px;
+  background: url('../img/Bank-Bag-Icon.svg') no-repeat;
+}
+
+.gold-coins {
+  margin-top: 76px;
+  height: 108px;
+  width: 108px;
+  background: url('../img/Gold%20Coins.svg') no-repeat;
+}
+
+.law-bill {
+  margin-top: 60px;
+  height: 143px;
+  width: 99px;
+  background: url('../img/Law-Bill-Icon.svg') no-repeat;
+}
+
+
+
+/*==========================================
+MANHATTAN IMAGE DIV
+===========================================*/
+
+
+
+/*Background Container*/
+.manhattan {
+  height: 568px;
+  width: 100%;
+  background-color: blue;
+  overflow: hidden;
+  background: url('../img/Manhattan-bg@2x.jpg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 3;
+}
+
+/*Object Being Centered*/
+.manhattan-badge {
+  width: 80%;
+  height: 100%;
+  max-width: 900px; 
+}
+
+.manhattan-bg {
+    background: url('../img/Manhattan-badge.svg') no-repeat center;
+    background-size: 100%;
+}
+
+
+/*Decoration Border*/
+.border-1 {
+  margin: 22px auto;
+  width: 95%;
+  height: 515px;
+  max-height: 515px;
+  border: 5px solid white;
+}
+
+/*Decoration Border 2 (The margin is based off of Border 1 due to Border 2 being inside 1)*/
+.border-2 {
+  margin: 5px auto;
+  width: 99%;
+  height: 502px;
+  max-height: 515px;
+  border: 2px solid white;
+}
+
+
+
+
+
+/*==========================================
+MANHATTAN FACTS SECTIONS
+===========================================*/
+
+
+
+.icon-container-manhattan {
+  width: 259px;
+  height: 260px;
+  border: 7px solid #AEC1AB;
+  text-align: center;
+}
+
+.apartment {
+  margin-top: 45px;
+  height: 170px;
+  width: 85px;
+  background: url('../img/apartment-icon.svg') no-repeat;
+}
+
+.multilingual {
+  margin-top: 83px;
+  height: 94px;
+  width: 115px;
+  background: url('../img/multilingual-icon.svg') no-repeat;
+}
+
+.big-apple {
+  margin-top: 76px;
+  height: 143px;
+  width: 99px;
+  background: url('../img/big-apple-icon.svg') no-repeat;
+}
+
+
+/*==========================================
+FOOTER
+===========================================*/
+
+.footer {
+  height: 450px;
+  margin: 0 auto;
+  background: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+
+.flex-container-footer {
+  padding: 155px 0 0 0;
+  margin: 0 auto;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+
+.flex-container-social {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+.facebook, 
+.twitter,
+.google-plus,
+.github {
+  width: 26px;
+  height: 24px;
+  margin-top: 28px;
+  margin-right: 18px;
+  opacity: 0.30;
+}
+
+
+.twitter {
+margin-right: 25px;
+}
+
+.facebook {
+  margin-left: 15px;
+}
+
+.flex-container-social li:hover {
+  opacity: 0.50;
+}
+
+em {
+  font-family:  'Lato', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.profile,
+.about-me,
+.connect {
+  height: 137px;
+}
+
+.profile {
+ width: 142px;
+ margin-right: 50px;
+ background-image: url('../img/Ryan-Profile-Photo.jpg');
+ background-size: 100%;
+}
+
+.about-me {
+  width: 410px;
+  margin-right: 45px;
+}
+
+
+.footer-body-text {
+   margin-top: 10px;
+   text-align: left;
+   font-size: 1.125em;
+   font-family: 'Lato', sans-serif;
+   font-weight: 300;
+   line-height: 29px;
+}
+
+.bottom-body-text,
+.back-to-top-button {
+  margin-top: 16px;
+  text-align: left;
+  opacity: 0.30;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 0.750em;
+  letter-spacing: 0.063em;
+
+}
+
+.back-to-top-button:hover {
+   opacity: 0.50;
+   border-bottom: 2px solid #767676;
+   padding-bottom: 4px;
+}
+
+
+
+
+
+
+.heading-footer, 
+.email {
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    font-size: 34px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+
+}
+
+.email {
+  margin-top: 23px;
+  font-size: 17px;
+  text-align: center;
+}
+.email a:link {
+  margin-top: 26px;
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  opacity: 0.30;
+}
+
+.email a:hover {
+  opacity: 0.50;
+}
+
+.connect {
+  width: 200px;
+}
+
+
+.bottom {
+  height: 50px;
+  background-color: #F9F9F9;
+}
+
+
+.flex-container-bottom {
+  width: 842px;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.flex-container-bottom body {
+         margin: 0px;
+}
+
+.flex-container-bottom a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
