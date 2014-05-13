@@ -1145,4 +1145,7 @@ MEDIA QUERIES
   }
    .footer-body-text {
    padding: 0 30px; 
-}
+  }
+  .city-box {
+    left: 40.5%;
+  }
