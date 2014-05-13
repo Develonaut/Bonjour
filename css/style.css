@@ -2,7 +2,6 @@
 GENERAL
 ===========================================*/
 
-
 html, 
 body {
     height: 100%;
@@ -14,47 +13,17 @@ body {
     padding: 0;
 }
 
-h2 {
-    margin: 0;
-}
-
-
-.wrapper {
-  max-width: 100%;
-  min-height: 700px;
-  margin: 0 auto;
-  padding: 0;
-  background: #F9F9F9;
-}
-
-.bonjour { 
-  max-width: 100%;
-  min-height: 585px;
-  margin: 0 auto;
-  padding: 0;
-  background: #F9F9F9;
-
-}
-
-.faq {
-   padding: 115px 0 0 0;
-}
-
-.with-bg {
-  background: url('../img/photography_%402X.png') repeat;
-}
-
-.fill {
-  height: 100%;
-  background: url('../img/Seattlebgreg.jpg') no-repeat center steelblue;
-  background-size: cover;
-
+em {
+  font-weight: 900;
 }
 
 img {
   max-width: 100%;
   background-size: cover;
 }
+
+
+
 .bonjour-background {
    background: url('../img/featurebg.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -62,148 +31,12 @@ img {
     -o-background-size: cover;
     background-size: cover;
 }
-
-.icon {
-  margin-left: auto;
-  margin-right: auto;   
-}
-
-
-/*Container to auto center*/
-.city-flex-container {
-  height: 505px;
-  width: 100%;
-  padding: 0;
-  margin: 0 auto;
-  list-style: none;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
-  -webkit-flex-flow: row wrap;
-  justify-content: center;
-  flex-wrap: wrap;
-
-}
-
-.manhattan-badge,
-.san-francisco-badge,
-.seattle-badge {
-  margin: auto;
-}
-
 .facts {
+  background-color: lightpink;
   width: 90%;
-  margin: 0 auto;
-}
-
-.one {
-  height: 1500px;
-}
-
-.two {
-  height: 1400px;
-}
-
-.three {
-  height: 1425px;
-}
-.flex-container {
-  height: 275px;
-  margin-top: 90px;
-  padding: 0;
-  list-style: none;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
-  -webkit-flex-flow: row wrap;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.first-fact {
-  margin-top: 90px;
-}
-
-
-.flex-container-reverse { /* modularlize this*/
-  height: 275px;
-  margin-top: 90px;
-  margin-bottom: 0px;
-  padding: 0;
-  list-style: none;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
-  -webkit-flex-flow: row wrap;
-  -webkit-justify-content: center;
-  justify-content: center;
-  flex-wrap: wrap-reverse;
-  
-}
-
-.text {
-  width: 472px;
-  height: 235px;
-  margin-left: 51px;
-  padding-top: 30px;  
-}
-
-.text-right {
-  width: 472px;
-  height: 235px;
-  margin-right: 51px;
-  padding-top: 30px;  
-}
-
-.text h1 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-}
-
-.text p {
-  font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    line-height: 29px;
-    font-size: 1.125em;
-}
-
-.text-right h1 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-}
-
-.text-right p {
-  font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    line-height: 29px;
-    font-size: 1.125em;
-}
-
-
-.body {
-    margin: 29px auto 0 auto;
-    height: 87px;
-    width: 69%;
-    padding: 0;
-    text-align: center;
-    font-size: 1.125em;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    text-align: left;
-    line-height: 29px;
-    letter-spacing:;
+  height: auto;
+  margin: 0px auto;
+  padding: 1px 0 90px 0;
 }
 
 /*==========================================
@@ -326,8 +159,9 @@ FEATURE CONTENT
 
 
 /*==========================================
-NAVIGATION
+NAVIGATION /*Need to be recoded Use Flexboxes*//*
 ===========================================*/
+
 
 nav {
 
@@ -417,77 +251,59 @@ nav .links li a:hover {
 }
 
 
-
-
 /*==========================================
-FAQ CONTENT
+CITY FEATURE IMAGE
 ===========================================*/
 
-em {
-  font-family:  'Lato', sans-serif;
-  font-weight: 900;
-  font-style: italic;
-  
-}
-
-.wrapper-intro {
-  width: 90%;
+/*Container to auto center*/
+.city-flex-container {
+  height: 505px;
+  width: 100%;
+  padding: 0;
   margin: 0 auto;
+  list-style: none;
+  
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;  
+  display: flex;
   
-  -webkit-flex-flow: column;
+  -webkit-flex-flow: row wrap;
   justify-content: center;
-  text-align: center;
-}
+  flex-wrap: wrap;
 
-.heading-facts {
-  margin-top: 82px;
-  margin-bottom: 0;
-  padding: 0;
-  text-align: center;
-  font-size: 35px;
-  font-family: 'Lato', sans-serif;
-}
-
-.body-intro {
-  width: 800px;
-  margin: 25px auto 0 auto;
-  text-align: left;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  line-height: 32px;
-  font-size: 1.125em;
 }
 
 
-.heading {
-    margin: 0 auto;
-    height: 42px;
-    padding: 0;
-    text-align: center;
-    font-size: 35px;
-    font-family: 'Lato', sans-serif;
-}
 
-.p-second {
-  margin-top: 86px;
-}
+
+
+
 
 
 /*==========================================
 SEATTLE IMAGE DIV
 ===========================================*/
 
+/*Container to auto center*/
+
+
 /*Background Container*/
-.seattle {
+.city-feature {
   height: 568px;
   width: 100%;
   background-color: blue;
   overflow: hidden;
+ /* background: url('../img/Seattle-Background.jpg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 3;*/
+}
+
+.seattle {
   background: url('../img/Seattle-Background.jpg') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -497,85 +313,7 @@ SEATTLE IMAGE DIV
 }
 
 
-/*Object Being Centered*/
-.seattle-badge {
-  width: 65%;
-  height: 100%;
-  max-width: 700px;
-}
-
-.seattle-bg {
-    background: url('../img/Seattle-Badge.svg') no-repeat center;
-    background-size: 100%;
-  }
-
-/*Decoration Border*/
-.border-1 {
-  margin: 22px auto;
-  width: 95%;
-  height: 515px;
-  max-height: 515px;
-  border: 5px solid white;
-}
-
-/*Decoration Border 2 (The margin is based off of Border 1 due to Border 2 being inside 1)*/
-.border-2 {
-  margin: 5px auto;
-  width: 99%;
-  height: 502px;
-  max-height: 515px;
-  border: 2px solid white;
-}
-
-
-
-
-
-/*==========================================
-SEATTLE FACTS SECTIONS
-===========================================*/
-
-.icon-container-seattle {
-  width: 259px;
-  height: 260px;
-  border: 7px solid #658795;
-  text-align: center;
-}
-
-
-.college-degrees {
-  margin-top: 61px;
-  height: 137px;
-  width: 98px;
-  background: url('../img/Graded-Paper-Icon%402x.svg') no-repeat;
-}
-
-.orignal-starbucks {
-  margin-top: 73px;
-  height: 118px;
-  width: 83px;
-  background: url('../img/Coffe-Cup-Icon.svg') no-repeat;
-}
-
-.technology-dependent {
-  margin-top: 75px;
-  height: 110px;
-  width: 192px;
-  background: url('../img/Laptop%20Icon%402x.svg') no-repeat;
-}
-
-
-
-/*==========================================
-SAN FRANSISCO IMAGE DIV
-===========================================*/
-
-/*Background Container*/
 .san-francisco {
-  height: 568px;
-  width: 100%;
-  background-color: blue;
-  overflow: hidden;
   background: url('../img/san-francisco-bg.jpg') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -585,88 +323,8 @@ SAN FRANSISCO IMAGE DIV
 }
 
 
-/*Object Being Centered*/
-.san-francisco-badge {
-  width: 90%;
-  height: 100%;
-  max-width: 1000px; 
-}
-
-.san-francisco-bg {
-    background: url('../img/san-fransico-badge.svg') no-repeat center;
-    background-size: 100%;
-}
-
-
-/*Decoration Border*/
-.border-1 {
-  margin: 22px auto;
-  width: 95%;
-  height: 515px;
-  max-height: 515px;
-  border: 5px solid white;
-}
-
-/*Decoration Border 2 (The margin is based off of Border 1 due to Border 2 being inside 1)*/
-.border-2 {
-  margin: 5px auto;
-  width: 99%;
-  height: 502px;
-  max-height: 515px;
-  border: 2px solid white;
-}
-
-
-
-/*==========================================
-SAN FRAN FACTS SECTIONS
-===========================================*/
-
-
-
-.icon-container-san-fran {
-  width: 259px;
-  height: 260px;
-  border: 7px solid #5AA39A;
-  text-align: center;
-}
-
-.bank-bag {
-  margin-top: 70px;
-  height: 120px;
-  width: 88px;
-  background: url('../img/Bank-Bag-Icon.svg') no-repeat;
-}
-
-.gold-coins {
-  margin-top: 76px;
-  height: 108px;
-  width: 108px;
-  background: url('../img/Gold%20Coins.svg') no-repeat;
-}
-
-.law-bill {
-  margin-top: 60px;
-  height: 143px;
-  width: 99px;
-  background: url('../img/Law-Bill-Icon.svg') no-repeat;
-}
-
-
-
-/*==========================================
-MANHATTAN IMAGE DIV
-===========================================*/
-
-
-
-/*Background Container*/
 .manhattan {
-  height: 568px;
-  width: 100%;
-  background-color: blue;
-  overflow: hidden;
-  background: url('../img/Manhattan-bg@2x.jpg') no-repeat;
+    background: url('../img/Manhattan-bg@2x.jpg') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -674,19 +332,6 @@ MANHATTAN IMAGE DIV
   z-index: 3;
 }
 
-/*Object Being Centered*/
-.manhattan-badge {
-  width: 80%;
-  height: 100%;
-  max-width: 900px; 
-}
-
-.manhattan-bg {
-    background: url('../img/Manhattan-badge.svg') no-repeat center;
-    background-size: 100%;
-}
-
-
 /*Decoration Border*/
 .border-1 {
   margin: 22px auto;
@@ -705,44 +350,66 @@ MANHATTAN IMAGE DIV
   border: 2px solid white;
 }
 
+.badge-flex-container {
+  height: 505px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  flex-wrap: wrap;
 
-
-
-
-/*==========================================
-MANHATTAN FACTS SECTIONS
-===========================================*/
-
-
-
-.icon-container-manhattan {
-  width: 259px;
-  height: 260px;
-  border: 7px solid #AEC1AB;
-  text-align: center;
 }
 
-.apartment {
-  margin-top: 45px;
-  height: 170px;
-  width: 85px;
-  background: url('../img/apartment-icon.svg') no-repeat;
+
+/*Object Being Centered*/
+.seattle-badge,
+.san-francisco-badge, 
+.manhattan-badge {
+  height: 100%;
 }
 
-.multilingual {
-  margin-top: 83px;
-  height: 94px;
-  width: 115px;
-  background: url('../img/multilingual-icon.svg') no-repeat;
+
+.seattle-badge {
+  width: 65%;
+  max-width: 700px;
 }
 
-.big-apple {
-  margin-top: 76px;
-  height: 143px;
-  width: 99px;
-  background: url('../img/big-apple-icon.svg') no-repeat;
+.san-francisco-badge {
+  width: 90%;
+  max-width: 1000px; 
 }
 
+.manhattan-badge {
+  width: 80%;
+  max-width: 900px; 
+}
+
+.seattle-bg {
+    background: url('../img/Seattle-Badge.svg') no-repeat center;
+}
+
+.san-francisco-bg {
+    background: url('../img/san-fransico-badge.svg') no-repeat center;
+}
+
+.manhattan-bg {
+    background: url('../img/Manhattan-badge.svg') no-repeat center;
+}
+
+.manhattan-bg,
+.san-francisco-bg,
+.seattle-bg {
+  background-size: 100%;
+}
 
 /*==========================================
 FOOTER
@@ -924,228 +591,250 @@ em {
    padding-bottom: 4px;
 }
 
+
+
+/*==========================================
+NEW CODE 
+===========================================*/
+
+.facts {
+  background-color: lightpink;
+  width: 90%;
+  height: auto;
+  margin: 0px auto;
+  padding: 1px 0 90px 0;
+}
+
+.flex-container-stack {
+   margin-top: 90px;
+   padding: 0;
+   display: -webkit-flex;
+   display: flex;
+   flex-direction: column; /* works with row or column */
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   flex-wrap:  column;
+   list-style: none;
+   text-decoration: none;
+}
+
+.city-intro,
+.city-description {
+  text-align: center;
+  width: 70%;
+  max-width: 825px;
+}
+
+.city-intro {
+  margin-bottom: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Lato', sans-serif;
+}
+
+.city-description {
+  margin: 40px auto 0 auto;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 32px;
+  font-size: 1.125em;
+}
+
+
+.flex-container,
+.flex-container-reverse {
+   margin-top: 90px;
+   padding: 0;
+   display: -webkit-flex;
+   display: flex;
+   flex-direction: row; /* works with row or column */
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap:  wrap;
+   list-style: none;
+   text-decoration: none;
+}
+
+.flex-container-reverse {
+   -webkit-flex-flow: row wrap-reverse;
+}
+
+.fact-body-container {
+   /* This will be twice as big as the small item. */
+  background: tomato;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.head { 
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 34px;
+  letter-spacing: 1px;
+  background-color: blue;
+}
+
+.f-body {
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 32px;
+  font-size: 17.99px;
+  padding: 5px;
+  width: 475px;
+  margin-top: 30px;
+  background-color: blue;
+}
+
+.icon-container {
+  height: 260px;
+  width: 260px;
+  line-height: 250px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  border: 7px solid #658795;
+  
+}
+
+.gap-left {
+   margin-left: 51px; /* Making this a percentage allows the media query to transition smoother*/
+}
+
+
+/*==========================================
+SEATTLE ICONS
+===========================================*/
+
+.icon {
+  margin: 0 auto;
+}
+
+.college-degrees {
+  margin-top: 61px;
+  height: 137px;
+  width: 98px;
+  background: url('../img/Graded-Paper-Icon%402x.svg') no-repeat;
+}
+
+.orignal-starbucks {
+  margin-top: 73px;
+  height: 118px;
+  width: 83px;
+  background: url('../img/Coffe-Cup-Icon.svg') no-repeat;
+}
+
+.technology-dependent {
+  margin-top: 75px;
+  height: 110px;
+  width: 192px;
+  background: url('../img/Laptop%20Icon%402x.svg') no-repeat;
+}
+
+
+/*==========================================
+SAN FRAN ICONS
+===========================================*/
+
+
+.bank-bag {
+  margin-top: 70px;
+  height: 120px;
+  width: 88px;
+  background: url('../img/Bank-Bag-Icon.svg') no-repeat;
+}
+
+.gold-coins {
+  margin-top: 76px;
+  height: 108px;
+  width: 108px;
+  background: url('../img/Gold%20Coins.svg') no-repeat;
+}
+
+.law-bill {
+  margin-top: 60px;
+  height: 143px;
+  width: 99px;
+  background: url('../img/Law-Bill-Icon.svg') no-repeat;
+}
+
+/*==========================================
+MANHATTAN ICONS
+===========================================*/
+
+.apartment {
+  margin-top: 45px;
+  height: 170px;
+  width: 85px;
+  background: url('../img/apartment-icon.svg') no-repeat;
+}
+
+.multilingual {
+  margin-top: 83px;
+  height: 94px;
+  width: 115px;
+  background: url('../img/multilingual-icon.svg') no-repeat;
+}
+
+.big-apple {
+  margin-top: 76px;
+  height: 143px;
+  width: 99px;
+  background: url('../img/big-apple-icon.svg') no-repeat;
+}
+
+
 /*==========================================
 MEDIA QUERIES
 ===========================================*/
 
 
 
-
-
-@media screen and (max-height: 800px) {
-  .city-box {
-  bottom: 28%;
-    left: 48.5%;
-  }
-
-}
-
-
-@media screen and (max-height:643px) {
-  .city-box {
-  bottom: 19%;
-   left: 48.5%;
-  }
-
-}
-
-
-@media screen and (max-width:1000px) {
-  .city-box {
-    left: 45%;
-    margin-left: -100px;
-  }
-
-}
-
-@media screen and (max-width:885px) {
-  .flex-container,
-  .flex-container-reverse {
-    margin-top: 0 auto;
-    text-align: center;
-  }
-
-  .first-fact {
-    margin: 50px auto !important;
-  }
-
-   .flex-container-reverse {
-    margin-top: 539px;
-  }
-
+@media screen and (max-width: 900px) {  
   
-  .heading-facts {
-    width: 80%;
-    margin: 82px auto 0 auto;
+  .gap-left {
+    margin-left: 0px;
   }
-
- .one {
-  height: 2150px;
- }
-
- .two {
-  height: 1970px;
- }
- .three {
-  height: 2000px;
- }
-
-
-  .body-intro {
-    text-align: center;
-    margin-top: 40px;
-    width: 80%;
+  
+  .fact-body-container {
+    margin-top: 50px;
   }
+  
+  .head
+  .f-body {
+    width: 90%;
+  }
+}
 
-  .text {
-    margin-left: -5px;
+@media screen and (max-width: 550px) {
+  .head {
     text-align: center;
   }
-
-   .text-right {
-    margin-right: -5px;
+  
+  .fact-body-container {
+    min-width: 200px;
+  }
+  
+  .head,
+  .f-body {
     text-align: center;
-  }
-
-  .text h1,
-  .text-right h1 {
-    margin-top: 10px;
-  }
-
-  .third {
-    margin-top: 0px;
-  }
-
-  .adjust {
-    margin-top: -25px;
-  }
-
-  .flex-container-footer {
-    margin: 0 auto;
-    padding-top: 50px;
-    -webkit-flex-flow: column;
-  }
-
-  .footer {
-    margin: 0 auto;
-    height: 600px;
-  }
-
-  .flex-container-footer {
-    -webkit-flex-flow: column;
-    margin: 0 auto;
-  }
-
-  .profile {
-    margin: 0 auto;
-  }
-
-  .about-me {
-    margin: 50px auto;
-  }
-  .connect {
+    width: 90%;
     margin: 0 auto;
   }
   
-  .back-to-top-button{
-    float: right;
+  .f-body {
+    margin: 30px auto;
   }
-
-  .bottom {
-    width: 600px;
-  }
-
-}
-
-
-@media screen and (max-width:775px) {
-  .two {
-    height: 2025px;
-  }
-}
-
-@media screen and (max-width:675px) {
-  .one {
-  height: 2200px;
- }
-
- .two {
-  height: 2050px;
- }
- .three {
-  height: 2050px;
- }
-
- .bottom {
-  width: 350px;
- }
-}
-
-@media screen and (max-width:575px) {
-  .one {
-  height: 2250px;
- }
-
- .three {
-  height: 2100px;
- }
-}
-
-@media screen and (max-width:520px) {
-  .facts {}
-
-  .one {
-  height: 2350px;
- }
-.two {
-  height: 2150px;
- }
- .three {
-  height: 2200px;
- }
-.third-law {
-  margin-top: 25px;
-
-}
-
-  .adjust {
-    margin-top: -45px;
-  }
-  .adjust-positive {
-    margin-top: 600px;
-  }
-
-  .bonjour {
-    height: 750px;
-  }
-
-  .p-second {
-    margin-top: 150px;
-  }
-}
-
-
-
-@media screen and (max-width:440px) {
-  .one {
-  height: 2550px;
- }
-.two {
-  height: 2250px;
- }
- .three {
-  height: 2250px;
- }
- .bonjour {
-    padding-top: 50px;
-  }
-  .heading-footer {
+  
+  .city-description {
     text-align: center;
-    font-size: 1.75em; 
+    margin-top: 60px;
   }
-   .footer-body-text {
-   padding: 0 30px; 
-  }
-  .city-box {
-    left: 40.5%;
-  }
+}
+  
