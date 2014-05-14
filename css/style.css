@@ -34,7 +34,6 @@ img {
 
 
 .facts {
-  background-color: lightpink;
   width: 90%;
   height: auto;
   margin: 0px auto;
@@ -164,94 +163,84 @@ FEATURE CONTENT
 NAVIGATION /*Need to be recoded Use Flexboxes*//*
 ===========================================*/
 
-
-nav {
-
+.nav {
   background: #FFFFFF;
   border-bottom: 1px solid rgba(0,0,0,0.15);
   position: absolute;
   bottom: -1px;
   width: 100%;
-  height: 72px;
-  z-index: 2;
+  min-height: 71px;
+  z-index: 2;  
+  padding: 0;
+  margin: 0;
+  list-style: none
 }
 
-nav .social-media {
-    position: relative;
-    float: right;
-    right: 13px;
-    top: 30px;
-    width: 177px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.nav-container {
+ margin: 0 auto;
+ padding: 0 60px;
+ display: -webkit-box;
+ display: -moz-box;
+ display: -ms-flexbox;
+ display: -webkit-flex;
+ display: flex;
+ -webkit-flex-flow: row wrap;
+ justify-content: space-between;
 }
 
-nav .social-media li {
-    position: relative;
-    display: inline-block;
-    padding-right: 27px;
+.nav-text {
+  padding-top: 28px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-nav .social-media li a img {
-    text-decoration: none;
-    /*The color below has a 50 percent opacity to it*/
-    opacity: 0.30;
-    width: 29px;
-    height: 22px;  
-}
-
-nav .social-media img:hover {
-    opacity: 0.50;
-}
-
-nav .social-media li a {
-    bottom: 5px;
-    position: relative;
-    text-decoration: none;
-    /*The color below has a 50 percent opacity to it*/
-    color: rgba(255,255,255, 0.5);   
-}
-
-nav .social-media li a:hover {
+.nav-text li {
+  display: inline-block;
   text-decoration: none;
-  /*The color below has a 50 percent opacity to it*/
-  color: rgba(255,255,255, 1); 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: .15px;
+  font-size: .800em;
 }
 
-
-nav .links {
-    position: relative;
-    float: left;
-    left: 40px;
-    top: 29px;
-    width: 300px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav .links li {
-    display: inline-block;
-    padding-right: 27px;
-}
-
-nav .links li a {
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 0.750em;
-    color: #A4A4A4;
-    letter-spacing: 0.063em;
-}
-nav .links li a:hover {
-  /*The color below has a 50 percent opacity to it*/
-  opacity: 1;
-  color: #767676;
+.nav-text li:hover {
   border-bottom: 2px solid #767676;
   padding-bottom: 4px; 
 }
 
+.nav-text li:nth-child(2) {
+  margin-left: 33px;
+}
+
+.facebook-top {
+  margin-right: 36px;
+}
+
+.twitter-top {
+  margin-right: 32px;
+}
+
+
+.social-icon {
+  padding: 25px 0 0 0;
+}
+
+.social-icon li {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+  opacity: 0.30;
+}
+
+.nav-text li,
+.social-incon li {
+  opacity: 0.30;
+}
+
+.nav-text li:hover,
+.social-icon li:hover {
+  opacity: 0.75;
+}
 
 /*==========================================
 CITY FEATURE IMAGE
@@ -277,13 +266,6 @@ CITY FEATURE IMAGE
 
 }
 
-
-
-
-
-
-
-
 /*==========================================
 SEATTLE IMAGE DIV
 ===========================================*/
@@ -295,7 +277,6 @@ SEATTLE IMAGE DIV
 .city-feature {
   height: 568px;
   width: 100%;
-  background-color: blue;
   overflow: hidden;
  /* background: url('../img/Seattle-Background.jpg') no-repeat;
   -webkit-background-size: cover;
@@ -444,6 +425,7 @@ CITY DESCRIPTION AND FACTS CONTENTS
 .city-intro {
   margin-bottom: 0;
   padding: 0;
+  min-width: 300px;
   text-align: center;
   font-size: 35px;
   font-family: 'Lato', sans-serif;
@@ -480,18 +462,14 @@ CITY DESCRIPTION AND FACTS CONTENTS
 
 .fact-body-container {
    /* This will be twice as big as the small item. */
-  background: tomato;
-  color: white;
   font-weight: bold;
   font-size: 3em;
 }
 
 .head { 
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 34px;
-  letter-spacing: 1px;
-  background-color: blue;
 }
 
 .f-body {
@@ -500,10 +478,8 @@ CITY DESCRIPTION AND FACTS CONTENTS
   font-weight: 300;
   line-height: 32px;
   font-size: 17.99px;
-  padding: 5px;
   width: 475px;
-  margin-top: 30px;
-  background-color: blue;
+  margin-top: 25px;
 }
 
 .icon-container {
@@ -800,7 +776,7 @@ BEGGINING OF BOTTOM NAV
 }
 
 .back-to-top-button:hover {
-   opacity: 0.50;
+   opacity: 1;
    border-bottom: 2px solid #767676;
    padding-bottom: 4px;
 }
@@ -811,11 +787,14 @@ MEDIA QUERIES
 
 
 @media screen and (max-width: 950px) {
+  .facts {
+  padding: 1px 0 50px 0;
+}
+
   .footer {
   padding: 1px 0 75px 0;
   } 
-
-
+  
   .flex-container-footer {
     padding-top: 75px;
     -webkit-flex-flow: column;
@@ -836,6 +815,12 @@ MEDIA QUERIES
 
 @media screen and (max-width: 900px) {  
   
+  .flex-container,
+  .flex-container-reverse {
+      margin-top: 50px;
+  }
+
+
   .gap-left {
     margin-left: 0px;
   }
@@ -847,6 +832,10 @@ MEDIA QUERIES
   .head
   .f-body {
     width: 90%;
+  }
+
+  .head {
+    text-align: center;
   }
 
    .bottom {
@@ -873,36 +862,71 @@ MEDIA QUERIES
   .head,
   .f-body {
     text-align: center;
-    width: 90%;
+    width: 252px;
     margin: 0 auto;
   }
   
   .f-body {
     margin: 30px auto;
   }
-  
+
+  .f-body,
+  .city-description,
+  .footer-body-text {
+    text-align: justify;
+  }
+
   .city-description {
-    text-align: center;
     margin-top: 60px;
   }
   
   .about-me {
-    padding-left: 50px;
+    padding-left: 65px;
     width: 250px;
   }
 
   .footer-body-text {
     margin-top: 30px;
-    width: 225px;
+    width: 185px;
   }
 
   .connect {
-    margin-top: 160px;
+    margin-top: 190px;
   }
 
-      .bottom {
+  .bottom {
     width: 350px;
   }
 
+}
+
+@media screen and (max-width: 490px) {
+  .nav {
+    display: none;
+  }
+
+  .nav-container {
+   -webkit-flex-flow: column;
+ justify-content: center;
+  }
+  .nav-text {
+   margin: 20px auto 20px auto;
+   max-height: 18px;
+   padding: 0;  
+  }
+  
+  .social-icon {
+    margin: 15px auto 25px auto;
+    padding: 0;
+  }
+
+  .facebook-top {
+  margin-right: 53px;
+  margin-left: 5px;
+}
+
+.twitter-top {
+  margin-right: 49px;
+}  
 }
   
