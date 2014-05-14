@@ -82,6 +82,8 @@ FEATURE CONTENT
    -ms-flex-pack: center;
    -webkit-justify-content: center;
    justify-content: center;
+  
+flex-direction: column;
   -webkit-flex-flow: column;
 }
 
