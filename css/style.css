@@ -14,22 +14,14 @@ body {
 }
 
 em {
+  font-family: 'Lato', sans-serif;
   font-weight: 900;
+  font-style: italic;
 }
 
 img {
   max-width: 100%;
   background-size: cover;
-}
-
-
-
-.bonjour-background {
-   background: url('../img/featurebg.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 
@@ -51,10 +43,9 @@ FEATURE CONTENT
     left: 0;
     position: relative;
     overflow: hidden;
-    margin: 0 auto;
-  
-    
+    margin: 0 auto;  
 }
+
 
 .bonjour-background {
    background: url('../img/featurebg.jpg') no-repeat center center fixed;
@@ -64,7 +55,86 @@ FEATURE CONTENT
     background-size: cover;
 }
 
-.city-box {
+.bonjour-main {
+  min-height: 425px;
+  position: absolute;
+  bottom: 5%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%; /* needed for Firefox */
+  list-style: none;
+  
+  display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+   display: -moz-box;      /* OLD: Firefox (buggy) */
+   display: -ms-flexbox;   /* MID: IE 10 */
+   display: -webkit-flex;  /* NEW, Chrome 21–28, Safari 6.1+ */
+   display: flex;          /* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
+  
+  -webkit-flex-flow: column;
+
+   -webkit-box-align: center; 
+   -moz-box-align: center; /* OLD… */
+   -ms-flex-align: center; /* You know the drill now… */
+   -webkit-align-items: center;
+   align-items: center;
+
+   -webkit-box-pack: center; 
+   -moz-box-pack: center;
+   -ms-flex-pack: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+  -webkit-flex-flow: column;
+}
+
+
+.title {
+  font-size: 100px;
+  color: white;  
+}
+
+.bonjour-main li:nth-child(2) {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.050em;
+    color: #fff;
+    letter-spacing: 0.125em;
+    margin-top: 15px;
+}
+
+.bonjour-main li:nth-child(3),
+.bonjour-main li:nth-child(4),
+.bonjour-main li:nth-child(5) {
+    width: 274px;
+    margin-top: 24px; 
+    padding-top: 24px;
+    height: 43px;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    opacity: 0.75;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.100em;
+}
+
+.bonjour-main li:nth-child(3) {
+  margin-top: 25px; 
+}
+
+.bonjour-main li:hover:nth-child(3),
+.bonjour-main li:hover:nth-child(4),
+.bonjour-main li:hover:nth-child(5) {
+    opacity: 1.00;
+}
+
+.bonjour-main a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.063em;
+}
+
+
+/*.city-box {
     height: 440px;
     display: -webkit-box;
     display: -moz-box;
@@ -155,7 +225,7 @@ FEATURE CONTENT
     color: #fff;
     letter-spacing: 0.125em;
 }
-
+*/
 
 
 
