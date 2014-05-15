@@ -855,6 +855,12 @@ BEGGINING OF BOTTOM NAV
 MEDIA QUERIES
 ===========================================*/
 
+@media screen and (max-height: 1350px) {    
+   .bonjour-main {
+    bottom: 8%;
+   }
+ }
+
 @media screen and (max-width: 950px) {
   .facts {
   padding: 1px 0 50px 0;
