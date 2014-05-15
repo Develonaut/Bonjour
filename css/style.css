@@ -4,6 +4,7 @@ GENERAL
 
 html, 
 body {
+
     height: 100%;
     background-color: #F9F9F9;
 }
@@ -56,7 +57,7 @@ FEATURE CONTENT
 }
 
 .bonjour-main {
-  min-height: 425px;
+  min-height: 26.5625em1;
   position: absolute;
   bottom: 5%;
   padding: 0;
@@ -89,7 +90,7 @@ flex-direction: column;
 
 
 .title {
-  font-size: 100px;
+  font-size: 6.25em;
   color: white;  
 }
 
@@ -105,16 +106,16 @@ flex-direction: column;
 .bonjour-main li:nth-child(3),
 .bonjour-main li:nth-child(4),
 .bonjour-main li:nth-child(5) {
-    width: 274px;
+    width: 17.125em;
     margin-top: 24px; 
     padding-top: 24px;
-    height: 43px;
+    height: 2.6875em;
     text-align: center;
-    border: 2px solid #FFFFFF;
+    border: 0.125em solid #FFFFFF;
     opacity: 0.75;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    letter-spacing: 0.100em;
+    letter-spacing: 0.0625em;
 }
 
 .bonjour-main li:nth-child(3) {
@@ -134,108 +135,14 @@ flex-direction: column;
 }
 
 
-/*.city-box {
-    height: 440px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 35%;
-    left: 47.5%;
-    margin-top: -80px;
-    margin-left: -100px;
-}
-
-.row {
-    width: 274px;
-    margin: 7px auto;
-    text-decoration: none;
-}
-
-.row a {
-    width: 274px;
-    margin: 7px auto;
-    text-decoration: none;
-}
-
-
-.city-button,
-.city-button-top-row {
-    margin-top: 24px; 
-    padding-top: 24px;
-    height: 43px;
-    color: #fff;
-    font-size: 1.063em;
-    text-align: center;
-    border: 2px solid #FFFFFF;
-    opacity: 0.75;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.100em;
-}
-
-.city-button-top-row {
-    margin-top: 0px;
-}
-
-
-
-.city-button:hover,
-.city-button-top-row:hover {
-    margin-top: 24px; 
-    padding-top: 24px;
-    height: 43px;
-    color: #fff;
-    font-size: 1.063em;
-    text-align: center;
-    border: 2px solid #FFFFFF;
-    opacity: 1.00;
-}
-
-.city-box .row h1 {
-    font-family:  'Lato', sans-serif;
-    font-weight: 900;
-    font-style: italic; 
-    color: white;
-    font-size: 6.250em;
-    margin: 10px 0 0 -46.7px;
-    width: 373px;
-    
-}
-
-.city-box .row p {
-    font-family: 'Lato' , sans-serif;
-    font-weight: 300;
-    color: #FFFFFF;
-    line-height: 30px;
-    font-size: 1.563em;
-    margin: 0 auto; 
-    width: 373px;
-} 
-
-.montserrat-body-text {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 0.745em;
-    margin: 22px 0 25px -25px;
-    color: #fff;
-    letter-spacing: 0.125em;
-}
-*/
-
-
-
 /*==========================================
 NAVIGATION /*Need to be recoded Use Flexboxes*//*
 ===========================================*/
 
+
 .nav {
   background: #FFFFFF;
-  border-bottom: 1px solid rgba(0,0,0,0.15);
+  border-bottom: 0.0625em solid rgba(0,0,0,0.15);
   position: absolute;
   bottom: -1px;
   width: 100%;
@@ -248,7 +155,7 @@ NAVIGATION /*Need to be recoded Use Flexboxes*//*
 
 .nav-container {
  margin: 0 auto;
- padding: 0 60px;
+ padding: 0 3.75em;
  display: -webkit-box;
  display: -moz-box;
  display: -ms-flexbox;
