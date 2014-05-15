@@ -33,6 +33,19 @@ img {
   padding: 1px 0 90px 0;
 }
 
+.nav-text li,
+.social-incon li,
+.bottom-body-text,
+.back-to-top-button {
+  opacity: 0.30;
+}
+
+.nav-text li:hover,
+.social-icon li:hover,
+.back-to-top-button:hover {
+  opacity: 0.60;
+}
+
 /*==========================================
 FEATURE CONTENT
 ===========================================*/
@@ -57,7 +70,7 @@ FEATURE CONTENT
 }
 
 .bonjour-main {
-  min-height: 26.5625em1;
+  min-height: 26.5625em;
   position: absolute;
   bottom: 5%;
   padding: 0;
@@ -115,7 +128,8 @@ flex-direction: column;
     opacity: 0.75;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    letter-spacing: 0.0625em;
+    letter-spacing: 0.1em;
+    font-size: 1em;
 }
 
 .bonjour-main li:nth-child(3) {
@@ -177,7 +191,7 @@ NAVIGATION /*Need to be recoded Use Flexboxes*//*
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   letter-spacing: .15px;
-  font-size: .800em;
+  font-size: 0.8125em;
 }
 
 .nav-text li:hover {
@@ -207,16 +221,6 @@ NAVIGATION /*Need to be recoded Use Flexboxes*//*
   text-decoration: none;
   list-style: none;
   opacity: 0.30;
-}
-
-.nav-text li,
-.social-incon li {
-  opacity: 0.30;
-}
-
-.nav-text li:hover,
-.social-icon li:hover {
-  opacity: 0.75;
 }
 
 /*==========================================
@@ -404,7 +408,7 @@ CITY DESCRIPTION AND FACTS CONTENTS
   padding: 0;
   min-width: 300px;
   text-align: center;
-  font-size: 35px;
+  font-size: 2.1875em;
   font-family: 'Lato', sans-serif;
 }
 
@@ -413,8 +417,8 @@ CITY DESCRIPTION AND FACTS CONTENTS
   text-align: left;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  line-height: 32px;
-  font-size: 1.125em;
+  line-height: 1.8125em;
+  font-size: 1.124375em;
 }
 
 
@@ -738,7 +742,6 @@ BEGGINING OF BOTTOM NAV
 .back-to-top-button {
   margin-top: 16px;
   text-align: left;
-  opacity: 0.30;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -753,7 +756,6 @@ BEGGINING OF BOTTOM NAV
 }
 
 .back-to-top-button:hover {
-   opacity: 1;
    border-bottom: 2px solid #767676;
    padding-bottom: 4px;
 }
@@ -885,6 +887,33 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 490px) {
+  .title {
+    font-size: 5.625em
+  }
+.bonjour-main li:nth-child(2) {
+    font-size: 1.050em;
+    color: #fff;
+    letter-spacing: 0.125em;
+    margin-top: 15px;
+}
+
+.bonjour-main li:nth-child(3),
+.bonjour-main li:nth-child(4),
+.bonjour-main li:nth-child(5) {
+    width: 17.125em;
+    margin-top: 24px; 
+    padding-top: 24px;
+    height: 2.6875em;
+    text-align: center;
+    border: 0.125em solid #FFFFFF;
+    opacity: 0.75;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    font-size: 1em; 
+  }
+  
+
   .nav {
     display: none;
   }
