@@ -4,6 +4,7 @@ GENERAL
 
 html, 
 body {
+    zoom: 95%;
     height: 100%;
     background-color: #F9F9F9;
 }
@@ -854,7 +855,6 @@ BEGGINING OF BOTTOM NAV
 /*==========================================
 MEDIA QUERIES
 ===========================================*/
-
 
 @media screen and (max-width: 950px) {
   .facts {
