@@ -192,6 +192,14 @@ NAVIGATION /*Need to be recoded Use Flexboxes*//*
   font-weight: 400;
   letter-spacing: .15px;
   font-size: 0.8125em;
+  text-decoration: none;
+  color: black;
+  f
+}
+
+.nav-text li a {
+  text-decoration: none;
+  color: black;
 }
 
 .nav-text li:hover {
@@ -825,7 +833,7 @@ MEDIA QUERIES
    }
 
    html {
-    zoom: 90%;
+    zoom: 95%;
    }
  }
 
