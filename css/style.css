@@ -34,7 +34,7 @@ img {
 }
 
 .nav-text li,
-.social-incon li,
+.social-icon li,
 .bottom-body-text,
 .back-to-top-button {
   opacity: 0.30;
@@ -220,7 +220,6 @@ NAVIGATION /*Need to be recoded Use Flexboxes*//*
   display: inline-block;
   text-decoration: none;
   list-style: none;
-  opacity: 0.30;
 }
 
 /*==========================================
@@ -229,7 +228,7 @@ CITY FEATURE IMAGE
 
 /*Container to auto center*/
 .city-flex-container {
-  height: 505px;
+  height: 31.5625em;
   width: 100%;
   padding: 0;
   margin: 0 auto;
@@ -256,7 +255,7 @@ SEATTLE IMAGE DIV
 
 /*Background Container*/
 .city-feature {
-  height: 568px;
+  height: 35.5em;
   width: 100%;
   overflow: hidden;
  /* background: url('../img/Seattle-Background.jpg') no-repeat;
@@ -307,10 +306,8 @@ SEATTLE IMAGE DIV
 
 /*Decoration Border 2 (The margin is based off of Border 1 due to Border 2 being inside 1)*/
 .border-2 {
-  margin: 5px auto;
-  width: 99%;
+  margin: 6px 6px 5px 6px;
   height: 502px;
-  max-height: 515px;
   border: 2px solid white;
 }
 
@@ -825,6 +822,10 @@ MEDIA QUERIES
 @media screen and (max-height: 650px) {    
    .bonjour-main {
     bottom: 8%;
+   }
+
+   html {
+    zoom: 90%;
    }
  }
 
