@@ -62,7 +62,7 @@ FEATURE CONTENT
 
 
 .bonjour-background {
-   background: url('../img/featurebg.jpg') no-repeat center center fixed;
+   background: url('../img/featurebg.jpg') no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -124,7 +124,7 @@ flex-direction: column;
     padding-top: 24px;
     height: 2.6875em;
     text-align: center;
-    border: 0.125em solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     opacity: 0.75;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -175,8 +175,12 @@ NAVIGATION /*Need to be recoded Use Flexboxes*//*
  display: -ms-flexbox;
  display: -webkit-flex;
  display: flex;
+
+
  -webkit-flex-flow: row wrap;
  justify-content: space-between;
+ -webkit-justify-content: space-between;
+
 }
 
 .nav-text {
@@ -249,7 +253,9 @@ CITY FEATURE IMAGE
   display: flex;
   
   -webkit-flex-flow: row wrap;
+  -webkit-justify-content: center;
   justify-content: center;
+  
   flex-wrap: wrap;
 
 }
@@ -333,6 +339,7 @@ SEATTLE IMAGE DIV
   display: flex;
   
   -webkit-flex-flow: row wrap;
+  -webkit-justify-content: center;
   justify-content: center;
   flex-wrap: wrap;
 
@@ -390,13 +397,25 @@ CITY DESCRIPTION AND FACTS CONTENTS
 .flex-container-stack { 
    margin-top: 90px;
    padding: 0;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
    display: -webkit-flex;
    display: flex;
+   
    flex-direction: column; /* works with row or column */
+   
+   -webkit-align-items: center;
    align-items: center;
+   
+   -webkit-justify-content: center;
    justify-content: center;
+   
+   -webkit-flex-direction: column;
    flex-direction: column;
    flex-wrap:  column;
+
+
    list-style: none;
    text-decoration: none;
 }
@@ -431,19 +450,41 @@ CITY DESCRIPTION AND FACTS CONTENTS
 .flex-container-reverse {
    margin-top: 90px;
    padding: 0;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
    display: -webkit-flex;
    display: flex;
+   
+   -ms-flex-direction: row;
+   -webkit-direction: row;
    flex-direction: row; /* works with row or column */
+   
+   -ms-flex-item-align: center;
+   -webkit-align-items: center;
    align-items: center;
+   
+   -webkit-justify-content: center;
    justify-content: center;
-   flex-direction: row;
-   flex-wrap:  wrap;
+   
+   -webkit-flex-wrap: row;
+   flex-wrap:  row;
+   
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap; /*firefox*/
+   
+  
+
+
    list-style: none;
    text-decoration: none;
+
+
 }
 
 .flex-container-reverse {
    -webkit-flex-flow: row wrap-reverse;
+   flex-flow: row wrap-reverse;
 }
 
 .fact-body-container {
@@ -607,6 +648,7 @@ FOOTER
   display: flex;
   
   -webkit-flex-flow: row wrap;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
@@ -623,7 +665,29 @@ FOOTER
   display: flex;
   
   -webkit-flex-flow: row wrap;
+  flex-flow: row wr;
+
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
   justify-content: center;
+
+  
+  /*-ms-flex-direction: row;
+   -webkit-direction: row;
+   flex-direction: row; /* works with row or column */
+   
+   /*-ms-flex-item-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+   
+   -webkit-justify-content: center;
+   justify-content: center;
+   
+   -webkit-flex-wrap: row;
+   flex-wrap:  row;
+   
+   -webkit-flex-flow: row wrap;*/
+  /* flex-flow: row wrap; *//*firefox*/
 }
 
 .facebook, 
@@ -665,7 +729,10 @@ em {
 .profile {
  width: 142px;
  margin-right: 50px;
- background-image: url('../img/Ryan-Profile-Photo.jpg');
+ background: url('../img/Ryan-Profile-Photo.jpg') no-repeat;
+ -webkit-background-size: 100%;
+ -moz-background-size: 100%;
+ -o-background-size: 100%;
  background-size: 100%;
 }
 
@@ -781,6 +848,7 @@ MEDIA QUERIES
   .flex-container-footer {
     padding-top: 75px;
     -webkit-flex-flow: column;
+    flex-flow: column;
   }
 
   .profile,
@@ -830,10 +898,6 @@ MEDIA QUERIES
 @media screen and (max-height: 650px) {    
    .bonjour-main {
     bottom: 8%;
-   }
-
-   html {
-    zoom: 95%;
    }
  }
 
@@ -909,16 +973,6 @@ MEDIA QUERIES
 .bonjour-main li:nth-child(3),
 .bonjour-main li:nth-child(4),
 .bonjour-main li:nth-child(5) {
-    width: 17.125em;
-    margin-top: 24px; 
-    padding-top: 24px;
-    height: 2.6875em;
-    text-align: center;
-    border: 0.125em solid #FFFFFF;
-    opacity: 0.75;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.1em;
     font-size: 1em; 
   }
   
@@ -927,10 +981,6 @@ MEDIA QUERIES
     display: none;
   }
 
-  .nav-container {
-   -webkit-flex-flow: column;
- justify-content: center;
-  }
   .nav-text {
    margin: 20px auto 20px auto;
    max-height: 18px;
@@ -949,6 +999,45 @@ MEDIA QUERIES
 
 .twitter-top {
   margin-right: 49px;
-}  
+} 
+
+@media screen and (max-width: 490px) {
+  .feature {
+    height: 100%;
+    min-height: 500px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;  
 }
+
+  .bonjour-main {
+    bottom: 4%;
+  }
+
+  .title {    
+    font-size: 4.85em;
+  }
+  .bonjour-main li:nth-child(2) {
+    font-size: .975em;
+  }
+  
+  .bonjour-main li:nth-child(3),
+  .bonjour-main li:nth-child(4),
+  .bonjour-main li:nth-child(5) {
+
+    font-size: 1em;
+  }
+  
+ @media screen and (max-width: 450px) {
+    .bottom {
+      width: 290px;
+    }
+ } 
+
+}
+
+
   
