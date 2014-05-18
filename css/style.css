@@ -179,9 +179,11 @@ NAVIGATION /*Need to be recoded Use Flexboxes*//*
 
 
  -webkit-flex-flow: row wrap;
+ -ms-flex-direction: row wrap;
+ 
  justify-content: space-between;
  -webkit-justify-content: space-between;
-
+ -ms-flex-pack: justify;
 }
 
 .nav-text {
@@ -254,10 +256,13 @@ CITY FEATURE IMAGE
   display: flex;
   
   -webkit-flex-flow: row wrap;
-  -webkit-justify-content: center;
-  justify-content: center;
-  
   flex-wrap: wrap;
+
+  -webkit-box-pack: center; 
+   -moz-box-pack: center;
+   -ms-flex-pack: center;
+   -webkit-justify-content: center;
+   justify-content: center;
 
 }
 
