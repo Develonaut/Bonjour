@@ -117,9 +117,9 @@ FEATURE CONTENT
     margin-top: 15px;
 }
 
-.bonjour-main li:nth-child(3),
-.bonjour-main li:nth-child(4),
-.bonjour-main li:nth-child(5) {
+.bonjour-main a:nth-child(3),
+.bonjour-main a:nth-child(4),
+.bonjour-main a:nth-child(5) {
     width: 17.125em;
     margin-top: 24px; 
     padding-top: 24px;
@@ -137,9 +137,9 @@ FEATURE CONTENT
   margin-top: 25px; 
 }
 
-.bonjour-main li:hover:nth-child(3),
-.bonjour-main li:hover:nth-child(4),
-.bonjour-main li:hover:nth-child(5) {
+.bonjour-main a:hover:nth-child(3),
+.bonjour-main a:hover:nth-child(4),
+.bonjour-main a:hover:nth-child(5) {
     opacity: 1.00;
 }
 
