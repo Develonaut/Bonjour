@@ -97,8 +97,9 @@ FEATURE CONTENT
    -webkit-justify-content: center;
    justify-content: center;
   
-flex-direction: column;
+  flex-direction: column;
   -webkit-flex-flow: column;
+  -ms-flex-direction: column;
 }
 
 
