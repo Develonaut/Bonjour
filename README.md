@@ -3,4 +3,4 @@ Bonjour
 
 One page layout website using CSS and HTML.
 
-Link to site: http://bonjourproject.com/
+Link to preview: http://develonaut.github.io/bonjour/
